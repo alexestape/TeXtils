@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fancyhdr}
+\usepackage[x11names]{xcolor}
+\usepackage[most]{tcolorbox} 
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{extpfeil}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\addtolength{\skip\footins}{2pc}
+
+\setlength{\headheight}{13.6mm}
+\fancyfoot[C]{\thepage}
+\parindent 0ex
+\renewcommand{\baselinestretch}{1}
+
+
+
+\definecolor{pblue}{RGB}{220,240,255} 
+\definecolor{pred}{RGB}{255,225,225}  
+\definecolor{pgreen}{RGB}{225,255,225}
+\definecolor{pyellow}{RGB}{255,255,225}
+
+\newtcolorbox{cont}{colback=pyellow, colframe=blue!20!black, boxrule=0.4pt, arc=3pt, left=4pt, right=4pt, top=4pt, bottom=4pt}
+\newtcolorbox{doubt}{colback=pred, colframe=red!20!black, boxrule=0.4pt, arc=3pt, left=4pt, right=4pt, top=4pt, bottom=4pt}
+\newtcolorbox{solved}{colback=pgreen, colframe=red!20!black, boxrule=0.4pt, arc=3pt, left=4pt, right=4pt, top=4pt, bottom=4pt}
+\newtcolorbox{expl}{colback=pblue, colframe=green!20!black, boxrule=0.4pt, arc=3pt, left=4pt, right=4pt, top=4pt, bottom=4pt}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+	
+	
+	\begin{titlepage}
+		\centering
+		\null\vspace*{\stretch{1}}
+		{\Huge subject\par}
+		\vspace{0.5cm} % Adjust this value as needed
+		\large Alexandre Estapé Carnicer
+		\vspace*{\stretch{1}}\null
+		\vfill
+	\end{titlepage}
+	
+	\vspace*{2cm}
+	{\LARGE Preface}
+	
+	\vspace{1cm}
+	
+	poner fechas tambien y si esta completo de pizarra
+	
+	\newpage
+	\tableofcontents
+	
+	\newpage
+	\input{1-overview}
+	\newpage
+	\input{2-implementation}
+	\newpage
+	\input{3-deconstruction}
+	\newpage
+	\input{4-scratch}
+	
+	
+	
+	
+	
+\end{document}
